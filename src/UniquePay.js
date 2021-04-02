@@ -34,8 +34,8 @@ class _$UniquePay {
     this._wxSignatureConfig = signatureConfig;
     if ($globalConfig.navigator.isWechat || $globalConfig.navigator.isAlipay) {
       let path = $globalConfig.navigator.isWechat ?
-        '//res.wx.qq.com/open/js/jweixin-1.2.0.js' :
-        '//a.alipayobjects.com/g/component/antbridge/1.1.4/antbridge.min.js';
+        'res.wx.qq.com/open/js/jweixin-1.6.0.js' :
+        '//gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.min.js';
 
       if (!path || path === '') {
         console.error('UniquePay init fail , path : null');
